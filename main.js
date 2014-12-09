@@ -9,7 +9,7 @@ var mainState = {
         game.load.image('pipe', 'assets/pipe.png'); 
 
         // Load the jump sound
-        game.load.audio('jump', 'assets/jump.wav');     
+        //game.load.audio('jump', 'assets/jump.wav');     
     },
 
     create: function() { 
@@ -35,7 +35,7 @@ var mainState = {
         this.labelScore = this.game.add.text(20, 20, "Score: 0", { font: "30px Arial", fill: "#ffffff" });  
 
         // Add the jump sound
-        this.jumpSound = this.game.add.audio('jump');
+        //this.jumpSound = this.game.add.audio('jump');
     },
 
     update: function() {
@@ -60,7 +60,7 @@ var mainState = {
         game.add.tween(this.bird).to({angle: -20}, 100).start();
 
         // Play sound
-        this.jumpSound.play();
+        //this.jumpSound.play();
     },
 
     hitPipe: function() {
